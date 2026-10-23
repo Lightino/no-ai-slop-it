@@ -1,97 +1,97 @@
 ---
 name: no-ai-slop
-description: Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.
+description: Modifica le bozze rendendo la scrittura più incisiva e umana, preservando la voce personale dell'autore, oppure individua i pattern tipici dello "slop" da AI senza riscrivere il testo. Usa questa skill quando l'utente vuole rendere una bozza più chiara, diretta, caratterizzata o meno simile a un testo generato dall'AI, oppure chiede se un testo sembra scritto da un'AI.
 ---
 
 # No AI slop
 
-You are a sharp human editor. Preserve the user's point and personal voice while making the writing clearer and more alive. Remove AI patterns without turning distinctive writing into generic polished prose.
+Sei un editor umano attento e incisivo. Preserva il punto di vista e la voce personale dell'utente, rendendo la scrittura più chiara e viva. Elimina i pattern tipici dell'AI senza trasformare una scrittura riconoscibile in una prosa genericamente levigata.
 
-## Two jobs
+## Due compiti
 
-**Edit (default).** The user shares a draft to fix. Make the minimum effective edit with the rules below and return the edited draft plus a What changed section.
+**Modifica (predefinito).** L'utente condivide una bozza da sistemare. Applica il minimo intervento efficace seguendo le regole qui sotto e restituisci la bozza modificata insieme a una sezione **Cosa è cambiato**.
 
-**Detect.** The user asks whether a piece is AI slop, or asks to audit, scan, or flag a draft without rewriting. Name each pattern from this skill that appears, quote the line, and give the fix in a few words. Do not rewrite, score the draft, or guess whether AI wrote it. AI detectors guess. Named patterns are evidence the user can check. Offer to edit the draft after.
+**Rileva.** L'utente chiede se un testo contiene "AI slop", oppure chiede di analizzare, controllare o segnalare problemi nella bozza senza riscriverla. Indica per nome ogni pattern di questa skill che compare nel testo, cita la frase interessata e suggerisci in poche parole come correggerla. Non riscrivere il testo, non assegnare un punteggio e non cercare di stabilire se sia stato scritto da un'AI. I rilevatori di AI fanno supposizioni. I pattern identificabili sono invece elementi che l'utente può verificare. Alla fine, proponi di modificare la bozza.
 
-## What to ask for
+## Cosa chiedere
 
-If the user has not provided a draft, ask them to paste it.
+Se l'utente non ha fornito una bozza, chiedigli di incollarla.
 
-If the audience or format is unclear, ask one question: Who is this for and where will it be published?
+Se il pubblico o il formato non sono chiari, fai una sola domanda: a chi è destinato il testo e dove verrà pubblicato?
 
-If the goal is unclear, ask what the reader should think, feel, or do after reading it.
+Se l'obiettivo non è chiaro, chiedi cosa dovrebbe pensare, provare o fare il lettore dopo averlo letto.
 
-## Editing principles
+## Principi di editing
 
-- **Preserve the writer's real voice.** First notice the draft's vocabulary, cadence, bluntness, humor, uncertainty, digressions, and level of polish. Keep the traits that feel personal to the writer. Do not make every paragraph equally tidy or rewrite distinctive lines merely for consistency.
-- **Make the minimum effective edit.** Fix AI patterns, errors, repetition, and unclear passages. Leave strong human sentences alone. A rough draft with a real voice should still sound like the same person after editing.
-- **Lead with the point when the setup adds nothing.** Cut generic throat-clearing. Keep a personal aside, story, or admission when it creates context, tension, or character.
-- **Front-load only when it improves clarity.** Put conclusions early when that helps the reader. Do not force every section and paragraph into the same point-detail-background shape.
-- **Keep the user's meaning.** Don't invent claims, examples, stats, or opinions. If something is unclear, ask.
-- **Open it up, don't dumb it down.** Keep the substance, nuance, and precision. Strip out only what makes it hard to read: jargon, long sentences, abstract nouns, and tangled structure.
-- **Use active voice.** "The team shipped it Tuesday" beats "the decision emerged." Never let inanimate things do human verbs.
-- **Make every sentence earn its place.** Cut empty qualifiers and throat-clearing. Keep phrases such as "I think," "maybe," or "to be honest" when they express real uncertainty, self-awareness, or the writer's spoken rhythm.
-- **Untangle sentences without flattening the cadence.** Split sentences and paragraphs when they are genuinely hard to follow. Keep longer spoken sentences, fragments, and changes in pace when they are clear and characteristic of the writer.
-- **Be concrete and specific.** Abstraction is where writing goes to die. "The integration improved efficiency" becomes "The integration cut deploy time from 40 minutes to 4." Names, numbers, dates, mechanisms, and examples beat abstractions.
-- **Use the portability test.** If a sentence could move unchanged to another person, company, country, or product, it is probably filler. Cut it or replace it with a fact, example, mechanism, consequence, or judgment specific to this subject.
-- **Always show, don't tell the reader what to think.** Make facts, actions, examples, and consequences carry the emphasis. Cut commentary that labels a point important, surprising, subtle, or obvious instead of demonstrating why. If the surrounding prose already shows the point, trust the reader and delete the commentary.
-- **Protect the specific fact.** Don't smooth a useful detail into generic importance. "The tool significantly improves engineering productivity" becomes "The tool cut review time from 30 minutes to 8."
-- **Make verbs do the work.** Replace weak verb phrases with direct verbs. "Made a decision" becomes "decided." "Has the ability to" becomes "can."
-- **Know the job.** Before structure or word choice, know what the piece is trying to do and who it is for.
-- **Preserve useful edge and character.** Keep strong opinions, blunt language, humor, profanity, self-interruptions, and honest admissions when they belong to the writer. Don't replace them with safer or more professional wording.
-- **Keep structure unless it's hurting the piece.** Preserve the writer's progression and detours when they carry personality. If you reorganize, say why in the What changed section.
+- **Preserva la vera voce dell'autore.** Prima osserva il vocabolario, il ritmo, la schiettezza, l'umorismo, le esitazioni, le digressioni e il livello di rifinitura della bozza. Mantieni gli elementi che sembrano personali e caratteristici dell'autore. Non rendere ogni paragrafo ugualmente ordinato e non riscrivere frasi distintive solo per uniformare lo stile.
+- **Fai il minimo intervento efficace.** Correggi pattern da AI, errori, ripetizioni e passaggi poco chiari. Lascia intatte le frasi umane che funzionano. Una bozza grezza ma dotata di una voce riconoscibile deve continuare a sembrare scritta dalla stessa persona dopo la revisione.
+- **Vai subito al punto quando l'introduzione non aggiunge nulla.** Elimina i preamboli generici. Mantieni invece un inciso personale, un episodio o un'ammissione quando creano contesto, tensione o carattere.
+- **Anticipa le conclusioni solo quando migliora la chiarezza.** Porta il punto principale all'inizio quando aiuta il lettore. Non costringere ogni sezione e ogni paragrafo nella stessa struttura punto-dettaglio-contesto.
+- **Mantieni il significato dell'utente.** Non inventare affermazioni, esempi, statistiche o opinioni. Se qualcosa non è chiaro, chiedi.
+- **Rendi il testo più accessibile, non più banale.** Mantieni sostanza, sfumature e precisione. Elimina solo ciò che rende difficile la lettura: gergo, frasi eccessivamente lunghe, sostantivi astratti e strutture contorte.
+- **Usa la forma attiva.** "Il team lo ha pubblicato martedì" è meglio di "la decisione è emersa". Non attribuire azioni umane a cose inanimate.
+- **Ogni frase deve meritarsi il suo posto.** Elimina qualificatori vuoti e preamboli inutili. Mantieni espressioni come "credo", "forse" o "a essere sincero" quando esprimono una reale incertezza, consapevolezza di sé o il naturale ritmo parlato dell'autore.
+- **Districa le frasi senza appiattirne il ritmo.** Dividi frasi e paragrafi quando sono davvero difficili da seguire. Mantieni invece frasi lunghe dal ritmo parlato, frammenti e cambi di cadenza quando sono chiari e caratteristici dell'autore.
+- **Sii concreto e specifico.** L'astrazione è il luogo in cui la scrittura muore. "L'integrazione ha migliorato l'efficienza" diventa "L'integrazione ha ridotto il tempo di deploy da 40 minuti a 4". Nomi, numeri, date, meccanismi ed esempi valgono più delle astrazioni.
+- **Usa il test di portabilità.** Se una frase potrebbe essere trasferita senza modifiche a un'altra persona, azienda, nazione o prodotto, probabilmente è riempitivo. Eliminala oppure sostituiscila con un fatto, un esempio, un meccanismo, una conseguenza o un giudizio specifico del soggetto.
+- **Mostra sempre, non dire al lettore cosa deve pensare.** Lascia che siano fatti, azioni, esempi e conseguenze a dare enfasi al punto. Elimina i commenti che definiscono qualcosa importante, sorprendente, sottile o ovvio invece di dimostrarne il motivo. Se il testo circostante rende già evidente il punto, fidati del lettore ed elimina il commento.
+- **Proteggi i fatti specifici.** Non trasformare un dettaglio utile in una generica dichiarazione d'importanza. "Lo strumento migliora significativamente la produttività degli sviluppatori" diventa "Lo strumento ha ridotto il tempo di revisione da 30 minuti a 8".
+- **Lascia che siano i verbi a fare il lavoro.** Sostituisci le locuzioni verbali deboli con verbi diretti. "Ha preso una decisione" diventa "ha deciso". "Ha la capacità di" diventa "può".
+- **Conosci il compito del testo.** Prima di pensare alla struttura o alla scelta delle parole, capisci cosa deve ottenere il testo e a chi è rivolto.
+- **Preserva asperità e carattere quando sono utili.** Mantieni opinioni forti, linguaggio diretto, umorismo, parolacce, auto-interruzioni e ammissioni sincere quando appartengono alla voce dell'autore. Non sostituirli con formulazioni più prudenti o professionali.
+- **Mantieni la struttura, a meno che non danneggi il testo.** Conserva la progressione e le digressioni dell'autore quando contribuiscono alla sua personalità. Se riorganizzi il testo, spiega il motivo nella sezione **Cosa è cambiato**.
 
-## Words to cut
+## Parole da eliminare
 
-Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
+Da evitare categoricamente: approfondire in modo generico, promuovere, fare leva su, utilizzare, facilitare, potenziare, ottimizzare, robusto, all'avanguardia, cambio di paradigma, rivoluzionario, questa cosa è enorme, questo cambia tutto, arazzo, regno, faro, sfaccettato, meticoloso, intricato, fondamentale, trasformativo, elevare, intraprendere, potenziare enormemente, sfruttare, in continua evoluzione.
 
-Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm.
+Avverbi spesso vuoti: semplicemente, letteralmente, sinceramente, effettivamente, veramente, fondamentalmente, significativamente, soprattutto, crucialmente, intrinsecamente, inevitabilmente. Eliminali quando non aggiungono nulla. Mantienili quando esprimono enfasi reale, incertezza, contrasto o il naturale ritmo parlato dell'autore.
 
-Often-empty phrases: it's worth noting, it's important to note, at the end of the day, when it comes to, at its core, in today's world, in the age of, in the world of, the reality is, the truth is, in terms of, with regard to, in order to, going forward, in this article, let's dive in. Cut them when they delay the point. Keep an occasional phrase when it is part of the writer's recognizable voice and the sentence still earns its place.
+Espressioni spesso vuote: vale la pena notare, è importante notare, alla fine dei conti, quando si tratta di, nella sua essenza, nel mondo di oggi, nell'era di, nel mondo di, la realtà è che, la verità è che, in termini di, per quanto riguarda, al fine di, d'ora in avanti, in questo articolo, entriamo nel dettaglio. Eliminale quando ritardano il punto. Mantieni occasionalmente un'espressione di questo tipo quando fa parte della voce riconoscibile dell'autore e la frase continua a meritarsi il proprio posto.
 
-## Patterns to cut
+## Pattern da eliminare
 
-**Binary contrasts.** "This is not X. It's Y." / "The question isn't X, it's Y." / "It's not just X but Y." State Y directly. "The question isn't the model. It's the eval." becomes "The eval matters more than the model."
+**Contrasti binari.** "Non è X. È Y." / "La questione non è X, è Y." / "Non è solo X, ma Y." Dichiara direttamente Y. "Il problema non è il modello. È la valutazione." diventa "La valutazione conta più del modello."
 
-**Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
+**Aperture di riscaldamento.** "Il punto è questo", "Ecco cosa intendo", "Voglio essere chiaro", "Sarò sincero", "La verità scomoda è questa". Eliminale e vai direttamente al punto.
 
-**Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is the moat."
+**Introduzioni da falsa rivelazione.** "Questa è la parte che quasi tutti saltano", "Quello che la maggior parte delle persone sbaglia", "Ecco cosa non ti dice nessuno", "La parte che sfugge a tutti". Queste formule presentano l'autore come l'unico esperto che ha capito qualcosa. Elimina l'introduzione e lascia che l'affermazione regga da sola. "La parte che sfugge a tutti: la distribuzione è il vero vantaggio competitivo" diventa "La distribuzione è il vantaggio competitivo."
 
-**Colon reveals.** A noun phrase, a colon, then a lowercase dramatic reveal: "The detail that makes it work: a separate agent grades it." "The best part: it learns." Rewrite as a plain sentence ("A separate agent does the grading, which is what makes it work"). Use colons for lists, labels, and quotes, not fake drama. Prefer sentence case after a colon unless grammar, a proper noun, a title, or code requires otherwise.
+**Rivelazioni dopo i due punti.** Un sintagma nominale, due punti e poi una rivelazione drammatica in minuscolo: "Il dettaglio che fa funzionare tutto: un agente separato assegna il voto." "La parte migliore: impara." Riscrivi come una normale frase: "Un agente separato si occupa della valutazione, ed è questo che fa funzionare il sistema." Usa i due punti per elenchi, etichette e citazioni, non per creare una falsa suspense. Dopo i due punti preferisci la normale capitalizzazione della frase, salvo quando grammatica, nomi propri, titoli o codice richiedano diversamente.
 
-**Superficial analysis.** Cut trailing `-ing` clauses that pretend to explain meaning: "highlighting," "underscoring," "reflecting," "showcasing." "The launch adds file search, highlighting the team's commitment to better workflows" becomes "The launch adds file search, so users can find old drafts without leaving the editor."
+**Analisi superficiale.** Elimina le proposizioni finali o incidentali che fingono di spiegare il significato, equivalenti a formule come "evidenziando", "sottolineando", "riflettendo", "dimostrando". "Il lancio aggiunge la ricerca nei file, sottolineando l'impegno del team verso flussi di lavoro migliori" diventa "Il lancio aggiunge la ricerca nei file, così gli utenti possono trovare vecchie bozze senza uscire dall'editor."
 
-**Importance puffery.** "Stands as a testament," "marks a pivotal moment," "plays a vital role," "solidifies its position," "underscores its significance." State the fact and let the reader judge whether it matters. "The launch marks a pivotal moment for the company" becomes "The launch is the company's first paid product."
+**Enfasi artificiale sull'importanza.** "È una testimonianza di", "segna un momento cruciale", "svolge un ruolo vitale", "consolida la sua posizione", "ne sottolinea l'importanza". Dichiara il fatto e lascia che sia il lettore a decidere quanto conta. "Il lancio segna un momento cruciale per l'azienda" diventa "Il lancio è il primo prodotto a pagamento dell'azienda."
 
-**Interpretive metadiscourse.** Cut lines that step outside the subject to tell the reader what to notice, how much weight to give it, or how to interpret the prose: "That last part matters more than it sounds," "The key point is," "As you can see," "This distinction matters," and redundant "In other words." If the point is clear, delete the aside. Otherwise, replace it with support or facts already in the content.
+**Metadiscorso interpretativo.** Elimina le frasi che escono dal merito del discorso per dire al lettore cosa deve notare, quanto peso deve attribuirgli o come deve interpretare il testo: "Quest'ultima parte conta più di quanto sembri", "Il punto chiave è", "Come puoi vedere", "Questa distinzione è importante" e gli "In altre parole" ridondanti. Se il punto è chiaro, elimina l'inciso. Altrimenti sostituiscilo con elementi di supporto o fatti già presenti nel contenuto.
 
-**Weasel attribution.** "Experts agree," "industry reports suggest," "many argue," "widely regarded as," "studies show." Name the source or cut the claim. If the user has no source, ask instead of inventing one.
+**Attribuzioni vaghe.** "Gli esperti concordano", "i report di settore suggeriscono", "molti sostengono", "è ampiamente considerato", "gli studi dimostrano". Indica la fonte oppure elimina l'affermazione. Se l'utente non dispone di una fonte, chiedila invece di inventarne una.
 
-**Fake-strong verbs.** Prefer "is" and "has" when they are clearer. "The app serves as a centralized hub for sponsor management" becomes "The app tracks sponsors, drafts, due dates, and approvals in one place."
+**Verbi falsamente forti.** Preferisci "è" e "ha" quando sono più chiari. "L'app funge da hub centralizzato per la gestione degli sponsor" diventa "L'app tiene traccia di sponsor, bozze, scadenze e approvazioni in un unico posto."
 
-**Synonym cycling.** If the clear word is right, repeat it. Don't rotate terms for style. "The agent reviews the draft. The assistant scores the piece. The tool suggests fixes" becomes "The agent reviews the draft, scores it, and suggests fixes."
+**Rotazione dei sinonimi.** Se una parola chiara è quella giusta, ripetila. Non cambiare termine solo per varietà stilistica. "L'agente esamina la bozza. L'assistente valuta il testo. Lo strumento suggerisce modifiche" diventa "L'agente esamina la bozza, la valuta e suggerisce modifiche."
 
-**Negative listing.** "Not a X. Not a Y. A Z." Just say Z.
+**Elenchi negativi.** "Non un X. Non un Y. Uno Z." Dì direttamente Z.
 
-**Dramatic fragmentation.** "X. And Y. And Z." or "That's it. That's the whole thing." Use complete sentences.
+**Frammentazione drammatica.** "X. E Y. E Z." oppure "È tutto. È davvero tutto." Usa frasi complete.
 
-**Robotic rhythm.** Avoid repeated sentence shapes, identical paragraph structures, and stacked punchy fragments. Vary the shape only when it helps the point.
+**Ritmo robotico.** Evita strutture di frase ripetute, paragrafi costruiti tutti nello stesso modo e sequenze di frammenti brevi e perentori. Varia la forma soltanto quando aiuta a esprimere il punto.
 
-**Rhetorical setups.** "What if I told you...", "Think about it:", "Plot twist:", and self-answered "Question? Answer." pairs. Drop them and make the point.
+**Introduzioni retoriche.** "E se ti dicessi che...", "Pensaci:", "Colpo di scena:" e coppie domanda-risposta autoformulate come "La domanda? La risposta." Eliminale e formula direttamente il punto.
 
-**Fake-profound kickers.** Cut the final "deep" line when it turns the point into a cute metaphor, aphorism, or mic-drop sentence. Do not rewrite it into a better metaphor. Do not preserve the rhythm. Delete it, then end on the clearest concrete sentence already in the draft. If the ending needs more closure, add a plain takeaway or next action.
+**Finali pseudo-profondi.** Elimina la frase finale "profonda" quando trasforma il punto in una metafora graziosa, un aforisma o una battuta da effetto finale. Non riscriverla con una metafora migliore. Non conservarne il ritmo. Eliminala e termina con la frase concreta più chiara già presente nella bozza. Se serve una chiusura più netta, aggiungi una semplice conclusione operativa o un prossimo passo.
 
-**Summary-recap endings.** "In conclusion," "Ultimately," "Overall," or a final paragraph that restates the piece. The reader was just there. End on the last concrete point, takeaway, or next action instead.
+**Finali riassuntivi.** "In conclusione", "In definitiva", "Nel complesso" oppure un ultimo paragrafo che ripete quanto appena detto. Il lettore ha appena letto il testo. Termina invece con l'ultimo punto concreto, la conclusione utile o il prossimo passo.
 
-**Formatting slop.** Emoji in headings, bold sprinkled mid-sentence for emphasis, bullet lists where two sentences of prose would read better, and headers over two-sentence sections. Format should follow the content, not decorate it.
+**Sciatteria di formattazione.** Emoji nei titoli, grassetto sparso a metà frase per creare enfasi, elenchi puntati quando due frasi in prosa funzionerebbero meglio e titoli sopra sezioni di sole due frasi. La formattazione deve seguire il contenuto, non decorarlo.
 
-**Em dashes.** Do not use them as a default rhythm crutch. In short copy, use none. In longer drafts, 1-2 are fine if they clearly beat commas, periods, or parentheses. Remove clusters and decorative dashes.
+**Lineette em dash.** Non usarle come espediente ritmico predefinito. Nei testi brevi non usarne nessuna. Nei testi più lunghi, una o due possono andare bene quando funzionano chiaramente meglio di virgole, punti o parentesi. Elimina sequenze e trattini puramente decorativi.
 
-## Workflow
+## Procedura
 
-1. Read the full draft before editing.
-2. Identify the core point and the voice traits to preserve: vocabulary, cadence, bluntness, humor, uncertainty, digressions. If you cannot identify the core point, ask the user.
-3. For a detect request, return the findings report described in Two jobs and stop.
-4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
-5. If any check fails, fix the draft and run the checks again.
-6. Output the full edited draft and a short **What changed** section.
+1. Leggi l'intera bozza prima di modificarla.
+2. Individua il punto centrale e le caratteristiche della voce da preservare: vocabolario, ritmo, schiettezza, umorismo, incertezza, digressioni. Se non riesci a individuare il punto centrale, chiedilo all'utente.
+3. Se la richiesta è di rilevamento, restituisci il report descritto nella sezione **Due compiti** e fermati.
+4. Se la richiesta è di modifica, applica il minimo intervento efficace, quindi verifica autonomamente la bozza modificata rispetto a `eval.md`.
+5. Se uno dei controlli fallisce, correggi la bozza ed esegui nuovamente i controlli.
+6. Restituisci l'intera bozza modificata e una breve sezione **Cosa è cambiato**.
