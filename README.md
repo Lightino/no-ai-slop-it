@@ -1,91 +1,85 @@
 # No AI Slop
 
-Remove 20+ patterns of AI slop from your writing without flattening your personal voice.
+Elimina oltre 20 pattern tipici della scrittura generata dall'intelligenza artificiale senza appiattire la tua voce personale.
 
 https://github.com/user-attachments/assets/f3055450-78eb-4672-880a-88a4fa54bde9
 
-## Problem
+## Il problema
 
-AI makes it easy to generate clean writing that all sounds the same. Even the best models keep producing lines like:
+L'AI rende facile generare testi formalmente corretti, ma che finiscono per assomigliarsi tutti. Anche i modelli migliori continuano a produrre frasi come:
 
-- “It’s not X. It’s Y.”
-- “What nobody tells you is…”
-- “The future isn’t coming. It’s already here.”
+- «Non è X. È Y.»
+- «Quello che nessuno ti dice è…»
+- «Il futuro non sta arrivando. È già qui.»
 
-When you use AI to edit, it can also smooth away the vocabulary, cadence, humor, and imperfections that make the writing sound like you.
+Quando usi l'AI per modificare un testo, rischi anche di perdere il vocabolario, il ritmo, l'umorismo e le imperfezioni che rendono riconoscibile il tuo modo di scrivere.
 
-## How to install No AI Slop
+## Come installare No AI Slop
 
-The easiest way to install the skill is to paste this into ChatGPT, Claude Code, Codex, or your favorite coding agent:
+Il modo più semplice per installare la skill è incollare questa istruzione in ChatGPT, Claude Code, Codex o nel tuo agente di programmazione preferito:
 
 ```text
-Install the /no-ai-slop skill globally from https://github.com/petergyang/no-ai-slop
+Installa globalmente la skill /no-ai-slop da https://github.com/petergyang/no-ai-slop
 ```
 
-You can also install it with `npx`:
+Puoi anche installarla tramite `npx`:
 
 ```sh
 npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
 ```
 
-## How to use No AI Slop
+## Come usare No AI Slop
 
-### Edit your writing
-
-```text
-/no-ai-slop (your writing)
-```
-
-The skill removes the AI slop patterns, preserves your personal voice, and lists what it changed.
-
-### Detect slop
+### Modificare un testo
 
 ```text
-/no-ai-slop is this slop? (your writing)
+/no-ai-slop (il tuo testo)
 ```
 
-The skill quotes every slop pattern it found without guessing whether AI wrote the text.
+La skill elimina i pattern tipici della scrittura artificiale, preserva la tua voce personale ed elenca le modifiche effettuate.
 
-### Generate slop for fun
+### Individuare i pattern artificiali
 
 ```text
-Draft an AI slop post about (topic)
+/no-ai-slop is this slop? (il tuo testo)
 ```
 
-Use it to generate the most cringe AI slop possible as satire.
+La skill cita ogni pattern problematico individuato, senza cercare di indovinare se il testo sia stato scritto da un'AI.
 
-## The slop that this skill catches
+### Generare testi artificiali per divertimento
 
-No AI Slop checks for 20+ patterns, including:
+```text
+Scrivi un post volutamente pieno di AI slop su (argomento)
+```
 
-1. **Binary contrasts.** “It’s not X. It’s Y.”
-2. **Throat-clearing openers.** “Here’s the thing,” “Let me be clear”
-3. **Faux-insight setups.** “What nobody tells you,” “The part everyone misses”
-4. **Colon reveals.** “The best part: it learns.”
-5. **Dramatic fragments.** “That’s it. That’s the whole thing.”
-6. **Superficial analysis.** “highlighting the team’s commitment to innovation”
-7. **Importance puffery.** “marks a pivotal moment,” “a testament to”
-8. **Weasel attribution.** “experts agree,” “studies show”
-9. **Synonym cycling.** “The agent handles your email. The assistant drafts replies.”
-10. **Fake-profound endings.** “The future isn’t coming. It’s already here.”
+Puoi utilizzare la skill anche per generare, a scopo satirico, testi esasperatamente artificiali, pieni di cliché e formule stereotipate.
 
-It also checks the fundamentals: Lead with the point when that helps, use active voice, untangle hard-to-follow sentences, and prefer concrete details over abstractions.
+## I pattern che questa skill riconosce
 
-## What’s inside
+No AI Slop controlla oltre 20 pattern, tra cui:
 
-- [`SKILL.md`](skills/no-ai-slop/SKILL.md) contains the editing rules and workflow.
-- [`eval.md`](skills/no-ai-slop/eval.md) contains the checks the skill runs on its work.
-- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) contains the ChatGPT and Codex plugin metadata.
-- [`build_plugin.py`](scripts/build_plugin.py) builds and validates the plugin package.
+1. **Contrasti binari.** «Non è X. È Y.»
+2. **Preamboli inutili.** «Il punto è questo», «Voglio essere chiaro».
+3. **Introduzioni da falsa rivelazione.** «Quello che nessuno ti dice», «La parte che sfugge a tutti».
+4. **Rivelazioni dopo i due punti.** «La parte migliore: impara.»
+5. **Frammentazione drammatica.** «È tutto. È davvero tutto.»
+6. **Analisi superficiale.** «Sottolineando l'impegno del team verso l'innovazione».
+7. **Enfasi artificiale sull'importanza.** «Segna un momento cruciale», «è una testimonianza di».
+8. **Attribuzioni vaghe.** «Gli esperti concordano», «gli studi dimostrano».
+9. **Rotazione dei sinonimi.** «L'agente gestisce le tue email. L'assistente prepara le risposte».
+10. **Finali pseudo-profondi.** «Il futuro non sta arrivando. È già qui.»
 
-No AI Slop is also available as a plugin in ChatGPT.
+La skill controlla anche i principi fondamentali della buona scrittura: andare subito al punto quando è utile, preferire la forma attiva, semplificare le frasi difficili da seguire e privilegiare dettagli concreti rispetto alle astrazioni.
 
-## Want more great AI skills?
+## Cosa contiene
 
-Check out [Behind the Craft](https://behindthecraft.com), my personal AI system with over a dozen other quality skills and courses.
+- [`SKILL.md`](https://github.com/petergyang/no-ai-slop/blob/main/skills/no-ai-slop/SKILL.md) contiene le regole di editing e la procedura operativa.
+- [`eval.md`](https://github.com/petergyang/no-ai-slop/blob/main/skills/no-ai-slop/eval.md) contiene i controlli che la skill esegue sul proprio lavoro.
+- [`.codex-plugin/plugin.json`](https://github.com/petergyang/no-ai-slop/blob/main/.codex-plugin/plugin.json) contiene i metadati del plugin per ChatGPT e Codex.
+- [`build_plugin.py`](https://github.com/petergyang/no-ai-slop/blob/main/scripts/build_plugin.py) crea e convalida il pacchetto del plugin.
 
-Subscribe to my [YouTube channel](https://www.youtube.com/@PeterYangYT?sub_confirmation=1) and [newsletter](https://creatoreconomy.so) for practical AI tutorials and interviews.
+No AI Slop è disponibile anche come plugin in ChatGPT.
 
-## License
+## Licenza
 
 MIT
