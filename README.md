@@ -1,4 +1,4 @@
-# No AI Slop
+# No AI Slop IT
 
 Elimina oltre 20 pattern tipici della scrittura generata dall'intelligenza artificiale senza appiattire la tua voce personale.
 
@@ -14,7 +14,7 @@ L'AI rende facile generare testi formalmente corretti, ma che finiscono per asso
 
 Quando usi l'AI per modificare un testo, rischi anche di perdere il vocabolario, il ritmo, l'umorismo e le imperfezioni che rendono riconoscibile il tuo modo di scrivere.
 
-## Come installare No AI Slop
+## Come installare No AI Slop IT
 
 Il modo più semplice per installare la skill è incollare questa istruzione in ChatGPT, Claude Code, Codex o nel tuo agente di programmazione preferito:
 
@@ -28,7 +28,7 @@ Puoi anche installarla tramite `npx`:
 npx skills add lightino/no-ai-slop-it --skill no-ai-slop-it --global --yes
 ```
 
-## Come usare No AI Slop (Versione ITA)
+## Come usare No AI Slop IT
 
 ### Modificare un testo
 
@@ -41,7 +41,7 @@ La skill elimina i pattern tipici della scrittura artificiale, preserva la tua v
 ### Individuare i pattern artificiali
 
 ```text
-/no-ai-slop-it is this slop? (il tuo testo)
+/no-ai-slop-it ci sono pattern da AI? (il tuo testo)
 ```
 
 La skill cita ogni pattern problematico individuato, senza cercare di indovinare se il testo sia stato scritto da un'AI.
@@ -56,7 +56,7 @@ Puoi utilizzare la skill anche per generare, a scopo satirico, testi esasperatam
 
 ## I pattern che questa skill riconosce
 
-No AI Slop controlla oltre 20 pattern, tra cui:
+No AI Slop IT controlla oltre 20 pattern, tra cui:
 
 1. **Contrasti binari.** «Non è X. È Y.»
 2. **Preamboli inutili.** «Il punto è questo», «Voglio essere chiaro».
@@ -73,12 +73,22 @@ La skill controlla anche i principi fondamentali della buona scrittura: andare s
 
 ## Cosa contiene
 
-- [`SKILL.md`](https://github.com/lightino/no-ai-slop-it/blob/main/skills/no-ai-slop/SKILL.md) contiene le regole di editing e la procedura operativa.
-- [`eval.md`](https://github.com/lightino/no-ai-slop-it/blob/main/skills/no-ai-slop/eval.md) contiene i controlli che la skill esegue sul proprio lavoro.
+- [`SKILL.md`](https://github.com/lightino/no-ai-slop-it/blob/main/skills/no-ai-slop-it/SKILL.md) contiene le regole di editing e la procedura operativa.
+- [`eval.md`](https://github.com/lightino/no-ai-slop-it/blob/main/skills/no-ai-slop-it/eval.md) contiene i controlli che la skill esegue sul proprio lavoro.
 - [`.codex-plugin/plugin.json`](https://github.com/lightino/no-ai-slop-it/blob/main/.codex-plugin/plugin.json) contiene i metadati del plugin per ChatGPT e Codex.
 - [`build_plugin.py`](https://github.com/lightino/no-ai-slop-it/blob/main/scripts/build_plugin.py) crea e convalida il pacchetto del plugin.
 
-No AI Slop è disponibile anche come plugin in ChatGPT.
+Il repository include i metadati e lo script per creare il pacchetto del plugin.
+
+Per convalidarlo senza conservare il pacchetto generato:
+
+```sh
+python scripts/build_plugin.py --check
+```
+
+## Crediti
+
+Traduzione e adattamento italiano a cura di [Lightino](https://github.com/Lightino), basati su [No AI Slop di Peter Yang](https://github.com/petergyang/no-ai-slop). La licenza e il copyright originali sono conservati nel file [LICENSE](LICENSE).
 
 ## Licenza
 

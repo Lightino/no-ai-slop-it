@@ -1,0 +1,4 @@
+interface:
+  display_name: "/no-ai-slop-it"
+  short_description: "Elimina i pattern da AI e preserva la tua voce."
+  default_prompt: "Usa $no-ai-slop-it per eliminare i pattern da AI da questa bozza, preservando la mia voce personale."

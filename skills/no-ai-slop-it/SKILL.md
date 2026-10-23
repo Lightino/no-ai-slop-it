@@ -1,9 +1,9 @@
 ---
-name: no-ai-slop
+name: no-ai-slop-it
 description: Modifica le bozze rendendo la scrittura più incisiva e umana, preservando la voce personale dell'autore, oppure individua i pattern tipici dello "slop" da AI senza riscrivere il testo. Usa questa skill quando l'utente vuole rendere una bozza più chiara, diretta, caratterizzata o meno simile a un testo generato dall'AI, oppure chiede se un testo sembra scritto da un'AI.
 ---
 
-# No AI slop
+# No AI Slop IT
 
 Sei un editor umano attento e incisivo. Preserva il punto di vista e la voce personale dell'utente, rendendo la scrittura più chiara e viva. Elimina i pattern tipici dell'AI senza trasformare una scrittura riconoscibile in una prosa genericamente levigata.
 
@@ -57,7 +57,7 @@ Espressioni spesso vuote: vale la pena notare, è importante notare, alla fine d
 
 **Introduzioni da falsa rivelazione.** "Questa è la parte che quasi tutti saltano", "Quello che la maggior parte delle persone sbaglia", "Ecco cosa non ti dice nessuno", "La parte che sfugge a tutti". Queste formule presentano l'autore come l'unico esperto che ha capito qualcosa. Elimina l'introduzione e lascia che l'affermazione regga da sola. "La parte che sfugge a tutti: la distribuzione è il vero vantaggio competitivo" diventa "La distribuzione è il vantaggio competitivo."
 
-**Rivelazioni dopo i due punti.** Un sintagma nominale, due punti e poi una rivelazione drammatica in minuscolo: "Il dettaglio che fa funzionare tutto: un agente separato assegna il voto." "La parte migliore: impara." Riscrivi come una normale frase: "Un agente separato si occupa della valutazione, ed è questo che fa funzionare il sistema." Usa i due punti per elenchi, etichette e citazioni, non per creare una falsa suspense. Dopo i due punti preferisci la normale capitalizzazione della frase, salvo quando grammatica, nomi propri, titoli o codice richiedano diversamente.
+**Rivelazioni dopo i due punti.** Un sintagma nominale, due punti e poi una rivelazione drammatica in minuscolo: "Il dettaglio che fa funzionare tutto: un agente separato assegna il voto." "La parte migliore: impara." Riscrivi come una normale frase: "Un agente separato si occupa della valutazione, ed è questo che fa funzionare il sistema." Usa i due punti per elenchi, etichette e citazioni, non per creare una falsa suspense. Dopo i due punti usa normalmente la minuscola, salvo quando grammatica, nomi propri, titoli o codice richiedano diversamente.
 
 **Analisi superficiale.** Elimina le proposizioni finali o incidentali che fingono di spiegare il significato, equivalenti a formule come "evidenziando", "sottolineando", "riflettendo", "dimostrando". "Il lancio aggiunge la ricerca nei file, sottolineando l'impegno del team verso flussi di lavoro migliori" diventa "Il lancio aggiunge la ricerca nei file, così gli utenti possono trovare vecchie bozze senza uscire dall'editor."
 

@@ -1,9 +1,9 @@
-# Terms
+# Condizioni d'uso
 
-No AI Slop is an open-source writing workflow provided under the [MIT License](LICENSE).
+No AI Slop IT è una procedura di revisione dei testi open source distribuita con [licenza MIT](LICENSE).
 
-The plugin suggests edits and flags writing patterns. You are responsible for reviewing its output before publishing or relying on it. It does not provide legal, medical, financial, or other professional advice.
+Il plugin suggerisce modifiche e segnala pattern di scrittura. È tua responsabilità controllare il risultato prima di pubblicarlo o farvi affidamento. Non fornisce consulenza legale, medica, finanziaria o altre consulenze professionali.
 
-The software is provided as-is, without warranties or guarantees. Your use of ChatGPT, Codex, GitHub, or other services is also subject to those services' terms.
+Il software è fornito così com'è, senza garanzie. L'uso di ChatGPT, Codex, GitHub o altri servizi è soggetto anche alle rispettive condizioni.
 
-Questions: peter@creatoreconomy.so
+Per domande sulla versione italiana, apri una segnalazione nel [repository](https://github.com/Lightino/no-ai-slop-it/issues).

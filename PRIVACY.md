@@ -1,9 +1,9 @@
 # Privacy
 
-No AI Slop is a skills-only plugin. It does not run an external server, require an account, or collect, store, or sell personal data.
+No AI Slop IT è un plugin composto esclusivamente da una skill. Non esegue server esterni, non richiede un account e non raccoglie, conserva o vende dati personali.
 
-The text you provide is processed by the ChatGPT or Codex product where you use the plugin. That processing is covered by the privacy terms of that product.
+Il testo fornito viene elaborato dal prodotto in cui usi la skill, per esempio ChatGPT o Codex. Il trattamento è disciplinato dall'informativa sulla privacy di quel prodotto.
 
-Visiting the project website or GitHub repository may create normal web server and analytics logs under those services' policies.
+La visita al sito del progetto o al repository GitHub può generare normali registri del server e dati di analisi secondo le informative dei rispettivi servizi.
 
-Questions: peter@creatoreconomy.so
+Per domande sulla versione italiana, apri una segnalazione nel [repository](https://github.com/Lightino/no-ai-slop-it/issues), senza includere dati personali.

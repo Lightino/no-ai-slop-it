@@ -1,30 +1,28 @@
-# No AI Slop plugin submission
+# Presentazione del plugin No AI Slop IT
 
-## Positioning
+## Descrizione
 
-No AI Slop removes 20+ patterns that make AI-assisted writing sound generic without flattening the writer's voice.
+No AI Slop IT è la versione italiana della skill di Peter Yang. Elimina oltre 20 pattern che rendono generica la scrittura assistita dall'AI, preservando la voce dell'autore.
 
-Peter uses it during the middle 50% of his writing process to improve spelling, grammar, and clarity. He writes the first draft himself and does the final line-by-line pass himself.
+## Prompt iniziali
 
-## Starter prompts
+1. @No AI Slop IT (testo)
+2. @No AI Slop IT ci sono pattern da AI? (testo)
 
-1. @No AI Slop (text)
-2. @No AI Slop is this slop? (text)
+## Casi di prova positivi
 
-## Positive test cases
+1. Modificare un'email grezza con preamboli inutili, un contrasto binario e un finale pseudo-profondo. Preservare il tono schietto dell'autore e restituire il testo completo con la sezione **Cosa è cambiato**.
+2. Analizzare un post LinkedIn senza riscriverlo. Indicare ogni pattern, citare la frase interessata e suggerire una breve correzione.
+3. Modificare un saggio personale con umorismo e digressioni. Eliminare solo i veri pattern artificiali e mantenere la personalità.
+4. Modificare un aggiornamento di prodotto che contiene numeri concreti. Preservare ogni fatto supportato e rendere i verbi più diretti.
+5. Modificare una lunga bozza dal ritmo parlato. Districare le frasi davvero confuse mantenendo la cadenza naturale.
 
-1. Edit a rough email containing throat-clearing, a binary contrast, and a fake-profound ending. Preserve the writer's blunt tone and return the full edit plus What changed.
-2. Audit a LinkedIn post without rewriting it. Name each pattern, quote the affected line, and suggest a short fix.
-3. Edit a personal essay with humor and digressions. Remove only the real slop and keep the personality.
-4. Edit a product update containing concrete numbers. Preserve every supported fact and make the verbs more direct.
-5. Edit a long spoken draft. Untangle genuinely confusing sentences while keeping its natural cadence.
+## Casi di prova negativi
 
-## Negative test cases
+1. L'utente fa una domanda fattuale senza condividere un testo. Non avviare la procedura di editing.
+2. L'utente chiede se un passaggio è stato scritto da un'AI. Non tentare di indovinarlo; proporre un'analisi dei pattern.
+3. L'utente chiede di inventare fatti o fonti a sostegno del testo. Non inventarli; chiedere prove oppure omettere l'affermazione.
 
-1. The user asks a factual question without sharing writing. Do not trigger the editing workflow.
-2. The user asks whether AI wrote a passage. Do not guess authorship; offer a pattern audit instead.
-3. The user asks the plugin to invent supporting facts or sources. Do not invent them; ask for evidence or keep the claim out.
+## Note di versione
 
-## Release notes
-
-Version 1.0.6 uses the new supplied No AI Slop logo, simplifies both starter prompts, and expands the directory description with concrete examples of the patterns it removes. The plugin includes edit and detect modes, voice-preserving instructions, self-checking evals, and no external server or authentication.
+La versione 1.0.7 completa la traduzione italiana delle istruzioni, dei controlli e dei metadati. Il nome della skill e del pacchetto è `no-ai-slop-it`. Il plugin comprende le modalità di modifica e rilevamento, preserva la voce dell'autore e non richiede server esterni o autenticazione.
